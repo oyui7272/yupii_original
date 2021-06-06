@@ -1,0 +1,390 @@
+/*-memo-
+作成していく中で不安なこと
+Figmaで作成していたときよりも、文字が大きく、太く見えてしまう。
+現時点でfigmaと違うところ
+-> navの文字サイズ
+
+不安なコーディング部分
+FVのmessage(container内に収まっていない、収めると読みにくい、画像の位置が変わるとさらに読みにくくなるのでは)
+navの部分画面を狭めると入りきらない、読めなくなるのでは
+
+
+絞り込むと打ち消される(introductionの部分)
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1080px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 48px;
+    font-family: 'BIZ UDMincho';
+}
+h2{
+    font-size: 36px;
+    font-family: 'BIZ UDMincho';
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'BIZ UDMincho', 'Georgia';  
+    line-height: 30px;  
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Hiragino Kaku Gothic Pro';
+    line-height: 30px;
+}
+/* nav */
+nav{
+    height: 76px;
+    width: 100%;
+    background-color: #CB4042;
+    color: #F8F4E6;
+}
+nav a{
+    text-decoration: none;
+    color: #F8F4E6;
+}
+nav h2{
+    display: inline-block;
+    font-family: 'BIZ UDMincho';
+    height: 76px;
+    line-height: 76px; /* navの縦方向の中央揃え */
+}
+nav ul{
+    float: right;
+}
+nav li{
+    font-family: 'BIZ UDMincho';
+    display: inline-block;
+    line-height: 76px;
+    margin-left: 60px;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+/* first-view */
+.first-view{
+    height: 600px;
+    background-image: url(image/first-view.JPG);
+    background-size: cover;
+    background-position: center 70%;
+}
+.first-view .container{
+    position: relative;
+}
+.message{
+    color: #6A2218;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+}
+#message{
+    color: #CB4042;
+    font-size: 36px;
+}
+
+/* introduction */
+.introduction .container{
+    text-align: center;
+    padding: 135px 0;
+}
+.introduction p{
+    font-family: 'BIZ UDMincho';
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+.intro-brown{
+    color: #6A2218;
+    font-size: 20px;
+}
+.intro-red{
+    color: #CB4042;
+    font-size: 20px;
+    font-family: 'BIZ UDMincho';
+}
+.intro-title{
+    color: #CB4042;
+    font-size: 34px;
+}
+
+/* feature */
+.feature{
+    height: 900px;
+    background-color: #CB4042;
+    padding: 65px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 75px;
+}
+.section-title h3{
+    margin: 10px 0;
+}
+.feature .section-title{
+    color: #F8F4E6;
+}
+
+/* technique */
+.technique{
+    padding: 65px 0;
+    background-color: #F8F4E6;
+}
+.technique .section-title{
+    color: #CB4042;
+}
+.section-explain{
+    margin-bottom: 75px;
+    text-align: center;
+}
+.section-explain p{
+    font-family: 'BIZ UDMincho';
+}
+.technique p{
+    color: #6A2218;
+}
+.technique-block{
+    margin-bottom: 160px;
+    overflow: hidden;
+}
+.technique-mov{
+    width: calc(50% - 24px);
+    padding:0 12px;
+    float: left;
+}
+video{
+    width: 100%;
+}
+.technique-exp{
+    width: calc(50% - 24px);
+    float: left;
+    padding:0 12px;
+}
+.technique-exp h3{
+    color: #CB4042;
+}
+.technique-exp p{
+    margin-bottom: 20px;
+}
+.technique-exp .technique-sub-title{
+    margin-bottom: 40px;
+}
+
+/* artist */
+.artist{
+    background-image: url(image/japanese-paper.jpeg);
+    background-size: cover;
+    padding: 65px 0;
+    overflow: hidden;
+}
+.artist .section-title{
+    color: #CB4042;
+}
+
+.artist-block{
+    width: calc(50% - 30px);
+    padding: 0 15px;
+    float: left;
+    margin-bottom: 50px;
+}
+.artist-exp{
+    color: #6A2218;
+    text-align: center;
+}
+.artist-mov {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.artist-mov:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%;
+}
+.artist-mov iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.artist-url{
+    margin: 10px auto;
+}
+
+.artist-url ul{
+    overflow: hidden;
+    text-align: center;
+}
+
+.artist-url a{
+    text-decoration: none;
+}
+.artist-url img{
+    width: 40px;
+    height: 40px;
+}
+.artist-url li{
+    display: inline-block;
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+/* history */
+.history{
+    padding: 65px 0;
+    background-color: #CB4042;
+    overflow: hidden;
+}
+.history .section-title{
+    color: #F8F4E6;
+}
+.history-block{
+    border-radius: 15px;
+    background: #F8F4E6;
+    width: 320px;
+    padding: 40px 0 20px 0;
+    color: #6A2218;
+    float: left;
+    margin: 0 20px;
+    height: 620px;
+}
+.history-image{
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 20px #C7AE68;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    margin: 0 auto;
+}
+#okinawa{
+    top: 40px;
+    left: 40px;
+}
+#osaka{
+    top: 35px;
+    left: 20px;
+}
+#aomori{
+    top: 50px;
+    left: 60px;
+}
+.history-block img{
+    position: absolute;
+}
+.hisotry-subtitle{
+    padding-top: 55px;
+    text-align: center;
+}
+.hisotry-subtitle h3{
+    padding: 5px 0;
+    text-align: center;
+}
+.history-number{
+    display: inline-block;
+    position: relative;
+}
+.history-number::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -2px;/*線の上下位置*/
+    display: inline-block;
+    width: 140px;/*線の長さ*/
+    height: 3px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #6A2218;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+.history-explain{
+    padding-top: 30px;
+    text-align: center;
+}
+.history-explain p{
+    padding-bottom: 20px;
+}
+
+/* play */
+.play{
+    padding: 65px 0;
+    background-color: #F8F4E6;
+    overflow: hidden;
+}
+.play .section-title{
+    color: #CB4042;
+}
+.play p, .play a{
+    color: #6A2218;
+}
+.play-icon{
+    background-color: #C7AE68;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+.play-icon img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+.play-blocks{
+    margin-top: 180px;
+}
+.play-block{
+    position: relative;
+    height: 60px;
+    width: 400px;
+    margin: 20px 0px;
+}
+.play-block p, .play-block a{
+    position: absolute;
+    top: 8px;
+    left:60px;
+    display: inline-block;
+}
+.play-block a{
+    text-decoration: none;
+}
+#map-exp{
+    top: -10px;
+}
+.play-image{
+    float:right;
+}
+/* cooperator */
+.cooperator{
+    padding: 65px 0;
+    background-color: #fff;
+}
+.cooperator .section-title{
+    color: #CB4042;
+}
+.cooperator p{
+    color:#6A2218;
+}
+.cooperator-block{
+    color: #6A2218;
+    text-align: center;
+    margin: 65px 0;
+}
+footer{
+    height: 72px;
+    background: #CB4042;
+    text-align: center;
+    color: #F8F4E6;
+}
+footer p{
+    line-height: 72px;
+}
