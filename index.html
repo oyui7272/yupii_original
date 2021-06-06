@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>津軽三味線</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 </head>
 <body>
     <nav>
@@ -41,6 +43,48 @@
             <div class="section-title">
                 <h1>特徴</h1>
                 <h3>FEATURE</h3>
+            </div>
+            <div class="feature-slider">
+                <div class="feature-block">
+                    <img src="image/feature-1.JPG" id="feature-1" alt="" class="feature-image">
+                    <div class="feature-sentence">
+                        <div class="feature-subtitle">
+                            <h3><span id="big">01 打</span>楽器的奏法</h3>
+                        </div>
+                        <div class="feature-explain">
+                            <p>一般的な三味線の優しく弾くイメージと異なり、津軽三味線は、バチで糸と胴皮を叩くことでダイナミックな音を鳴らします。</p>
+                            <p>演奏をよく聴いていると、バチが胴にあたり、バンバンと鳴っています！</p>
+                            <p>弦楽器であるのに、まるで打楽器のように力強く叩く奏法は、世界中の弦楽器の中でもかなり珍しいことです！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-block">
+                    <img src="image/feature-2.JPG" id="feature-2" alt="" class="feature-image">
+                    <div class="feature-sentence">
+                        <div class="feature-subtitle">
+                            <h3><span id="big">02 大</span>迫力の大きい音</h3>
+                        </div>
+                        <div class="feature-explain">
+                            <p>津軽三味線は三味線の中でも最も大きく派手な音で演奏します。</p>
+                            <p>よりパワーを引き出すために、他の三味線より太い糸を、長く貼ります。そのため、使用する棹も最も太い太棹。</p>
+                            <p>日本で1番大きい三味線です。</p>
+                            <p>ハイスピードの曲を大きな音で弾くことで、さらに大迫力の演奏になります。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-block">
+                    <img src="image/feature-3.JPEG" id="feature-3" alt="" class="feature-image">
+                    <div class="feature-sentence">
+                        <div class="feature-subtitle">
+                            <h3><span id="big">03 撥</span>(バチ)を前後にする振り撥</h3>
+                        </div>
+                        <div class="feature-explain">
+                            <p>奏法の1つに、バチの位置を前後に変えて演奏する振り撥(前後撥)があります。</p>
+                            <p>前バチはできるだけ小さな音を、後ろバチではできるだけ大きな音を出し、音の強弱をつけます。</p>
+                            <p>一般的な三味線は、同じ位置で弾くことため、振り撥は1音が大きい津軽三味線ならではの特徴です。</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -257,6 +301,12 @@
     <footer>
         <p>©ゆぴぃ</p>
     </footer>
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script>
+        $('.feature-slider').slick();
+    </script>
 </body>
 </html>
 
