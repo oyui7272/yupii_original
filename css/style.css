@@ -1,3 +1,8 @@
+/*
+変更前　#6A2218
+変更後　#48392D
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -109,17 +114,48 @@ nav li{
 }
 .section-title{
     text-align: center;
-    margin-bottom: 55px;
+    margin: 55px auto 55px auto;
+    display: inline-block;
+    position: relative;
+}
+.section-title h1{
+    display: table;
 }
 .section-title h3{
-    margin: 10px 0;
+    margin: 10px auto;
+    display: table;
+}
+
+.section-title::before{
+    position: absolute;
+    top: 15px;
+    left: -120px;
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 60px;
+    background-image: url(/image/section-title.png);
+    background-size: cover;
+}
+.section-title::after{
+    position: absolute;
+    top: 15px;
+    right: -120px;
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 60px;
+    background-image: url(/image/section-title.png);
+    background-size: cover;
 }
 .swiper-container {
     width: 925px;
     height: 510px;
+    border-radius: 15px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
 }
 .swiper-parentDiv {
-    width: 1020px;
+    width: 1040px;
     height: 510px;
     margin: 0 auto;
     position: relative;
@@ -137,7 +173,7 @@ nav li{
     --swiper-navigation-color:#F8F4E6;   
 }
 .swiper-pagination{
-    margin: 20px 430px;
+    margin: 30px 430px;
     width: 165px;
 }
 .swiper-pagination-bullet {
@@ -163,10 +199,9 @@ nav li{
     background-color: #F8F4E6;
     width: 925px;
     height: 510px;
-    border-radius: 15px;
-    box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
     margin:0 auto;
     position: relative;
+    border-radius: 15px;
 }
 .feature-subtitle h3{
     position: relative;
