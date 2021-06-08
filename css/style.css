@@ -120,6 +120,7 @@ nav li{
 }
 .section-title h1{
     display: table;
+    margin: 0 auto;
 }
 .section-title h3{
     margin: 10px auto;
