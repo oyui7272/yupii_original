@@ -353,9 +353,23 @@
                 el: '.feature .swiper-scrollbar',
             },
         });
-
+    </script>
+    <script>
         //swiper 768以下で起動
-        var historySwiper; 
+        var historySwiper = new Swiper('.history .swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.history .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.history .swiper-button-next',
+                prevEl: '.history .swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.history .swiper-scrollbar',
+            },
+        });; 
         $(function() {
         $(window).on('load resize', function(){
             var w = $(window).width();
@@ -363,20 +377,7 @@
                 if (historySwiper) {
                     return;
                 } else {
-                    historySwiper = new Swiper('.history .swiper-container', {
-                        loop: true,
-                        pagination: {
-                            el: '.feature .swiper-pagination',
-                            clickable: true,
-                        },
-                        navigation: {
-                            nextEl: '.history .swiper-button-next',
-                            prevEl: '.history .swiper-button-prev',
-                        },
-                        scrollbar: {
-                            el: '.history .swiper-scrollbar',
-                        },
-                    });
+                    historySwiper  
                 }
             } else {
                 if (historySwiper) {
