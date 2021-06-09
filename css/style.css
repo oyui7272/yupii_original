@@ -3,6 +3,7 @@
 変更後　#48392D
 */
 
+/* スタイル共通 */
 *{
     margin: 0;
     padding: 0;
@@ -99,7 +100,6 @@ nav li{
 .intro-red{
     color: #CB4042;
     font-size: 20px;
-    font-family: 'BIZ UDMincho';
 }
 .intro-title{
     color: #CB4042;
@@ -149,39 +149,38 @@ nav li{
     background-image: url(/image/section-title.png);
     background-size: cover;
 }
-.swiper-container {
-    /*width: 925px;*/
+.feature .swiper-container {
+    
     width: 90%;
     height: 510px;
     border-radius: 15px;
     box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
 }
 
-.swiper-parentDiv {
+.feature .swiper-parentDiv {
     width: 100%;
     margin: 0 auto;
     position: relative;
 }
-.swiper-button-prev {
+.feature .swiper-button-prev {
+    left: -4%;
+}  
+.feature .swiper-button-next {
+    right: -4%;
+}
+.feature .swiper-button-next,
+.feature .swiper-button-prev {
     position: absolute;
-    left: 0%;
-}
-  
-.swiper-button-next {
-    right: 0%;
-}
-.swiper-button-next,
-.swiper-button-prev {
     --swiper-navigation-color:#F8F4E6;   
 }
-.swiper-pagination{
+.feature .swiper-pagination{
     margin: 0 auto;
 }
-.swiper-pagination-bullets{
+.feature .swiper-pagination-bullets{
     left: 50%;
     transform: translateX(-50%);
 }
-.swiper-pagination-bullet{
+.feature .swiper-pagination-bullet{
     width: 15px;
     height: 15px;
     background-color: #C4C4C4;
@@ -190,7 +189,7 @@ nav li{
     margin: 30px 20px;
 }
 
-.swiper-pagination-bullet-active {
+.feature .swiper-pagination-bullet-active {
     background-color: #F8F4E6;
     opacity: 1;
 }
@@ -240,10 +239,6 @@ nav li{
     object-position: 20% 90%;
 }
 .feature-sentence{
-    /*width: 340px;*/
-    /*position: absolute;
-    left: 515px;
-    top: 70px;*/
     width: calc(100% - 80px);
     padding: 60px 40px;
 }
@@ -378,9 +373,7 @@ video{
 .history-block{
     border-radius: 15px;
     background: #F8F4E6;
-    /*width: 320px;*/
     width: calc(100% / 3 - 60px);
-    /*padding: 40px 0 20px 0;*/
     color: #6A2218;
     float: left;
     margin: 0 20px;
@@ -509,4 +502,282 @@ footer{
 }
 footer p{
     line-height: 72px;
+}
+
+/* SP版 */
+@media screen and (max-width: 480px) {
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 36px;
+        font-family: 'BIZ UDMincho';
+    }
+    h2{
+        font-size: 24px;
+        font-family: 'BIZ UDMincho';
+    }
+    
+    h3{
+        font-size: 16px;
+        font-family: 'BIZ UDMincho', 'Georgia';  
+        line-height: 30px;  
+    }
+    
+    p{
+        font-size: 16px;
+        font-family: 'Hiragino Kaku Gothic Pro';
+        line-height: 30px;
+    }
+    /* nav */
+    nav ul{
+        display: none;
+    }
+    /* first-view */
+    .first-view{
+        height: 280px;
+        background-position: right 80%;
+    }
+    .message{
+        top: 120px;
+        right: 0px;
+        font-size: 12px;
+    }
+    #message{
+        color: #CB4042;
+        font-size: 20px;
+    }
+
+    /* introduction */
+    .intro-brown{
+        font-size: 16px;
+    }
+    .intro-red{
+        font-size: 16px;
+    }
+    .intro-title{
+        color: #CB4042;
+        font-size: 24px;
+    }
+
+    /*feature*/
+    .feature{
+        height: 850px;
+    }
+    .feature .swiper-container {
+        height: 600px;   
+    }
+    .feature .swiper-pagination-bullet{
+        margin: 30px 8px;
+    }
+    .feature .section-title{
+        color: #F8F4E6;
+    }
+    .feature-block{
+        height: 600px;
+    }
+    .feature-subtitle h3{
+        margin-bottom: 20px;
+        transform: translateX(13vw);
+    }
+    .feature-subtitle h3::before{
+       content: '';
+       position: absolute;
+       bottom: 0px;
+       display: inline-block;
+       width: 100%;
+       height: 8px;
+       background-color: rgba(199, 174, 104, 0.5);
+       border-radius: 2px; 
+    }
+    .feature-image{
+        height: 210px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0px 0 0 0px;
+    }
+    #feature-1{
+        object-position: 65% 80%;
+    }
+    #feature-2{
+        object-position: 50% 20%;
+    }
+    #feature-3{
+        object-position: 20% 90%;
+    }
+    .feature-sentence{
+        width: calc(100% - 40px);
+        padding: 20px 20px;
+    }
+    .feature-sentence-parent{
+        float: left;
+        width: 100%;
+    }
+    .feature-explain p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    #big{
+        font-size: 24px;
+    }
+    /* technique */
+    .section-explain{
+        margin-bottom: 75px;
+        text-align: center;
+    }
+    .section-explain p{
+        font-family: 'BIZ UDMincho';
+    }
+    .technique-block{
+        margin-bottom: 80px;
+        overflow: hidden;
+    }
+    .technique-mov{
+        width: 80vw;
+        margin: 20px auto;
+        padding: 0 15px;
+        float: none;
+    }
+    .technique-exp{
+        width: 80vw;
+        float: none;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    /*history*/
+    .history-block{
+        width: 90%;
+        height: 560px;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .history-wrapper{
+        width: 100%;
+    }
+    .history .swiper-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 560px;
+        border-radius: 15px;
+        box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .history .swiper-parentDiv {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .history .swiper-button-prev {
+        position: absolute;
+        left: -4%;
+    }
+    
+    .history .swiper-button-next {
+        right: -4%;
+    }
+    .history .swiper-button-next,
+    .history .swiper-button-prev {
+        --swiper-navigation-color:#F8F4E6;   
+    }
+    .history .swiper-pagination{
+        margin: 0 auto;
+    }
+    .history .swiper-pagination-bullets{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .history .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        background-color: #C4C4C4;
+        opacity: 0.8;
+        outline: none;
+        margin: 30px 8px;
+    }
+    .history .swiper-pagination-bullet-active {
+        background-color: #F8F4E6;
+        opacity: 1;
+    }
+    .history-image{
+        margin: 30px auto 0 auto;
+        width: 70%;
+    }
+    .history-image img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .hisotry-subtitle{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .hisotry-subtitle h3{
+        padding: 5px 0;
+        text-align: center;
+    }
+    .history-number{
+        display: inline-block;
+        position: relative;
+    }
+    .history-number::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -2px;/*線の上下位置*/
+        display: inline-block;
+        width: 140px;/*線の長さ*/
+        height: 3px;/*線の太さ*/
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);/*位置調整*/
+        background-color: #6A2218;/*線の色*/
+        border-radius: 2px;/*線の丸み*/
+    }
+    .history-explain{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .history-explain p{
+        padding-bottom: 20px;
+    }
+    
+    /* artist */
+    .artist-block{
+        width: 80vw;
+        padding: 0 15px;
+        float: none;
+        margin: 0 auto 30px auto;
+    }
+    .artist-exp{
+        color: #6A2218;
+        text-align: center;
+    }
+    .artist-mov {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .artist-url{
+        margin: 10px auto;
+    }
+
+    .artist-url ul{
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .artist-url a{
+        text-decoration: none;
+    }
+    .artist-url img{
+        width: 60px;
+        height: 60px;
+    }
+    .artist-url li{
+        display: inline-block;
+        list-style-type: none;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
 }
