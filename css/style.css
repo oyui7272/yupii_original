@@ -277,17 +277,22 @@ nav li{
     overflow: hidden;
 }
 .technique-mov{
-    width: calc(40vw - 24px);
+    width: calc(50% - 24px);
     margin:0 12px;
-    float: left;
 }
 video{
     width: 100%;
 }
 .technique-exp{
-    width: calc(40vw - 24px);
+    width: calc(50% - 24px);
     float: left;
     margin: 0 12px;
+}
+.technique-left{
+    float: left;
+}
+.technique-right{
+    float: right;
 }
 .technique-exp h3{
     color: #CB4042;
