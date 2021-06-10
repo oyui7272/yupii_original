@@ -530,6 +530,12 @@ footer p{
         font-family: 'Hiragino Kaku Gothic Pro';
         line-height: 30px;
     }
+    .section-title::before{
+        display: none;
+    }
+    .section-title::after{
+        display: none;
+    }
     /* nav */
     nav ul{
         display: none;
@@ -675,6 +681,7 @@ footer p{
     }
     
     .history .swiper-button-next {
+        position: absolute;
         right: -4%;
     }
     .history .swiper-button-next,
