@@ -787,4 +787,57 @@ footer p{
         height: 60px;
         margin: 10px;
     }
+    /*play*/
+    .play .section-explain p{
+        text-align: left;
+    }
+    .play{
+        padding: 65px 0;
+        background-color: #F8F4E6;
+        overflow: hidden;
+    }
+    .play-icon{
+        background-color: #C7AE68;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .play-icon img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 8px;
+        left: 7px;
+    }
+    .play-blocks{
+        margin-top: 20px;
+    }
+    .play-block{
+        position: relative;
+        width: 100%;
+        margin: 0px;
+    }
+    .play-block p, .play-block a{
+        position: absolute;
+        top: 8px;
+        left:45px;
+        display: inline-block;
+    }
+    .play-block a{
+        text-decoration: none;
+    }
+    #map-exp{
+        top: -10px;
+    }
+    .play-image{
+        float:none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .play-image img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 }
