@@ -372,6 +372,12 @@ video{
     background-color: #CB4042;
     overflow: hidden;
 }
+.history-pc{
+    display: block;
+}
+.history-sp{
+    display: none;
+}
 .history .section-title{
     color: #F8F4E6;
 }
@@ -657,6 +663,12 @@ footer p{
         margin: 0 auto;
     }
     /*history*/
+    .history-pc{
+        display: none;
+    }
+    .history-sp{
+        display: block;
+    }
     .history-block{
         width: 100%;
         height: 560px;
