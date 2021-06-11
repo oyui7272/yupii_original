@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
 }
+h1, h2, h3, p{
+    line-height: 1.5em;
+}
 html { scroll-behavior: smooth;}
 .nav-container{
     width: 80vw;
@@ -33,13 +36,11 @@ h2{
 h3{
     font-size: 22px;
     font-family: 'BIZ UDMincho', 'Georgia';  
-    line-height: 30px;  
 }
 
 p{
     font-size: 16px;
     font-family: 'Hiragino Kaku Gothic Pro';
-    line-height: 30px;
 }
 /* nav */
 nav{
@@ -97,7 +98,7 @@ nav li{
 }
 .introduction p{
     font-family: 'BIZ UDMincho';
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
 }
 .introduction p:not(.intro-title){
@@ -535,9 +536,6 @@ footer p{
         width: 90vw;
         margin: 0 auto;
     }
-    h1, h2, h3, p{
-        line-height: 1.5em;
-    }
     h1{
         /*変更前36px*/
         /*font-size: 24px;*/
@@ -555,14 +553,12 @@ footer p{
         /*font-size: 19px;*/
         font-size: max(17px, 4vw);
         font-family: 'BIZ UDMincho', 'Georgia';  
-        line-height: 30px;  
     }
     
     p{
         /*font-size: 16px;*/
         font-size: max(14px,3.2vw);
         font-family: 'Hiragino Kaku Gothic Pro';
-        line-height: 30px;
     }
     .section-title::before{
         display: none;
