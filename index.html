@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <div class="container">
+        <div class="nav-container">
             <h2>津軽三味線</h2>
             <ul>
                 <li><a href="#feature">特徴</a></li>
@@ -30,11 +30,11 @@
     <div class="introduction">
         <div class="container">
             <p class="intro-brown">三味線といえば、敷居の高い感じですが、<br>
-                意外もロックのようにダイナミックで迫力ある音色を奏でます。</p>
-            <p class="intro-brown">ときには現代曲も演奏し、親しみやすい楽器。<br>
-                演奏をきけば、きっと一瞬で虜になるに間違いなし！</p>
+                意外もロックのように<br class="br_hid_pc">ダイナミックで迫力ある音色を奏でます。</p>
+            <p class="intro-brown">ときには現代曲も演奏し、<br class="br_hid_pc">親しみやすい楽器。<br>
+                演奏をきけば、<br class="br_hid_pc">一瞬で虜になるに間違いなし！</p>
             <p class="intro-red">津軽三味線をもっと身近に感じてほしい。<br>
-                そして三味線の和の音色で日々の生活に彩りを。</p>
+                三味線の和の音色で日々の生活に彩りを。</p>
             <p class="intro-title">ようこそ、津軽三味線の世界へ。</p>
         </div>
     </div>
@@ -147,7 +147,7 @@
                     <p>糸に対して左手を並行に揺らすことで、ビブラートをかけるように音を響かせたり、三味線らしいうねりのある音を表現します。</p>
                 </div>
             </div>
-            <div class="technique-block">
+            <div class="technique-block technique-block-last">
                 <div class="technique-mov technique-right">
                     <video src="movies/kakimawashi2.mp4" controls></video>
                 </div>
@@ -344,19 +344,21 @@
                 <p>大阪にあるつるや楽器さんでは、ワンコインで1〜2時間の三味線体験をすることができます。<br>
                     初めて触る方も是非気軽に訪れてみてください！</p>
             </div>
-            <div class="play-image"><img src="image/play.jpeg" alt=""></div>
-           <div class="play-blocks">
-                <div class="play-block">
-                    <div class="play-icon"><img src="image/map-icon.png" alt=""></div>
-                    <p id="map-exp">〒590-0954<br>大阪府堺市堺区大町東３丁１−６ つるや楽器</p>
-                </div>
-                <div class="play-block">
-                    <div class="play-icon"><img src="image/phone-icon.png" alt=""></div>
-                    <p>072-232-0521</p>
-                </div>
-                <div class="play-block">
-                    <div class="play-icon"><img src="image/hp-icon.png" alt=""></div>
-                    <a href="http://tsuruyagakki.hp4u.jp/" target="_blank">http://tsuruyagakki.hp4u.jp/</a>
+            <div class="play-parent-block">
+                <img class="play-image" src="image/play.jpeg" alt="">
+                <div class="play-blocks">
+                    <div class="play-block">
+                        <div class="play-icon"><img src="image/map-icon.png" alt=""></div>
+                        <p id="map-exp">〒590-0954<br>大阪府堺市堺区大町東３丁１−６ つるや楽器</p>
+                    </div>
+                    <div class="play-block">
+                        <div class="play-icon"><img src="image/phone-icon.png" alt=""></div>
+                        <p>072-232-0521</p>
+                    </div>
+                    <div class="play-block">
+                        <div class="play-icon"><img src="image/hp-icon.png" alt=""></div>
+                        <a href="http://tsuruyagakki.hp4u.jp/" target="_blank">http://tsuruyagakki.hp4u.jp/</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -394,6 +396,9 @@
             navigation: {
                 nextEl: '.feature .swiper-button-next',
                 prevEl: '.feature .swiper-button-prev',
+            },
+            coverflow: {
+                slideShadows : true,
             },
         });
     </script>
