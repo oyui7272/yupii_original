@@ -43,6 +43,7 @@ p{
     font-family: 'Hiragino Kaku Gothic Pro';
 }
 /* nav */
+/*
 nav{
     height: 76px;
     width: 100%;
@@ -57,7 +58,7 @@ nav h2{
     display: inline-block;
     font-family: 'BIZ UDMincho';
     height: 76px;
-    line-height: 76px; /* navの縦方向の中央揃え */
+    line-height: 76px;
 }
 nav ul{
     float: right;
@@ -69,6 +70,53 @@ nav li{
     margin-left: 60px;
     font-size: 16px;
     list-style-type: none;
+}
+*/
+.btn-gNav{
+    display: none;
+}
+.nav-block{
+    background-color: #CB4042;
+}
+#hamburger{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#gNav{
+    height: 75px;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: .3s;
+}
+#hamburger h2{
+    color: #F8F4E6;
+    font-family: 'BIZ UDMincho';
+    z-index: 4;
+    display: inline-block;
+    line-height: 75px;
+}
+#gNav.open{
+    right: 0px;
+}
+#gNav .gNav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 75px;
+}
+#gNav .gNav-menu li{
+    list-style-type: none;
+    display: inline-block;
+    line-height: 76px;
+    margin-left: 30px;
+}
+#gNav .gNav-menu li a{
+    color: #F8F4E6;
+    text-decoration: none;
 }
 
 /* first-view */
@@ -579,6 +627,7 @@ footer p{
         margin: 0 auto 20px auto;
     }
     /* nav */
+    /*
     nav{
         height: 60px;
     }
@@ -587,7 +636,80 @@ footer p{
     }
     nav h2{
         height: 60px;
-        line-height: 60px; /* navの縦方向の中央揃え */
+        line-height: 60px;
+    }
+    */
+    #hamburger .btn-gNav{
+        position: fixed;
+        top: 22px;
+        right: 5vw;
+        width: 40px;
+        height: 40px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+        background-color: #CB4042;
+        border-radius: 5px;
+    }
+    
+    #hamburger .btn-gNav span{
+        position: absolute;
+        left: 4px;
+        width: 80%;
+        height: 4px;
+        background: #F8F4E6;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+    }
+    #hamburger .btn-gNav span:nth-child(1) {
+        top:8px;
+    }
+    #hamburger .btn-gNav span:nth-child(2) {
+        top:18px;
+    }
+    #hamburger .btn-gNav span:nth-child(3) {
+        top:28px;
+    }
+    #hamburger .btn-gNav.open span:nth-child(1){
+        background: #F8F4E6;
+        top: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform   : rotate(-45deg);
+        transform        : rotate(-45deg);
+    }
+    #hamburger .btn-gNav.open span:nth-child(2),#hamburger .btn-gNav.open span:nth-child(3){
+        top: 6px;
+        background :#F8F4E6;
+        -webkit-transform: rotate(45deg);
+        -moz-transform   : rotate(45deg);
+        transform        : rotate(45deg);
+    }
+    
+    .btn-gNav{
+        display: block;
+    }
+    #gNav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 50px;
+    }
+    #gNav .gNav-menu{
+        width: 100%;
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: #CB4042;
+    }
+    #gNav .gNav-menu li{
+        padding : 10px 20px;
+        margin: 0 auto;
+        line-height: 1.5em;
     }
     /* first-view */
     .first-view{
