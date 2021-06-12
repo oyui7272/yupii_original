@@ -876,9 +876,6 @@ footer p{
         margin: 10px;
     }
     /*play*/
-    .play .section-explain p{
-        text-align: left;
-    }
     .play{
         padding: 40px 0;
         background-color: #F8F4E6;
@@ -907,6 +904,7 @@ footer p{
     .play-block{
         width: 100%;
         margin: 0px;
+        padding: 0 15px;
     }
     .play-block p, .play-block a{
         display: inline-block;
@@ -919,7 +917,8 @@ footer p{
     }
     .play-image{
         float:none;
-        width: 100%;
+        width: 80vw;
+        padding: 0 15px;
         margin: 0 auto;
     }
     .play-image img{
