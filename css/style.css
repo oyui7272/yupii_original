@@ -287,7 +287,9 @@ nav li{
     color: #6A2218;
 }
 .technique-block{
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .technique-block:not(.technique-block-last){
     margin-bottom: 110px;
@@ -301,14 +303,13 @@ video{
 }
 .technique-exp{
     width: calc(50% - 24px);
-    float: left;
     margin: 0 12px;
 }
 .technique-left{
-    float: left;
+    flex-direction: row;
 }
 .technique-right{
-    float: right;
+    flex-direction: row-reverse;
 }
 .technique-exp h3{
     color: #CB4042;
@@ -716,7 +717,7 @@ footer p{
     }
     .history-block{
         width: 90%;
-        height: 450px;
+        height: 460px;
         float: none;
         margin: 0 auto;
         padding: 0;
@@ -772,15 +773,15 @@ footer p{
         opacity: 1;
     }
     .history-image{
-        margin: 30px auto 0 auto;
-        width: 60%;
+        margin: 20px auto 0 auto;
+        width: 55%;
     }
     .history-image img{
         margin: 0 auto;
         width: 100%;
     }
     .hisotry-subtitle{
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
     }
     .hisotry-subtitle h3{
