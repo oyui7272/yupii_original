@@ -301,6 +301,12 @@ nav li{
 video{
     width: 100%;
 }
+.technique-pc-exp{
+    display: block;
+}
+.technique-sp-exp{
+    display: none;
+}
 .technique-exp{
     width: calc(50% - 24px);
     margin: 0 12px;
@@ -677,8 +683,22 @@ footer p{
         font-size: 24px;
     }
     /* technique */
+    .technique-pc-exp{
+        display: none;
+    }
+    .technique-sp-exp{
+        display: block;
+        margin: 0 auto;
+        width: 80vw;
+    }
+    .technique-sp-exp{
+        color: #CB4042;
+    }
     .technique{
         padding: 40px 0;
+    }
+    .technique-block{
+        display: block;
     }
     .technique .section-title h3{
         margin-bottom: 20px;
