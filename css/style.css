@@ -711,7 +711,7 @@ footer p{
         font-family: 'BIZ UDMincho';
     }
     .technique-block:not(.technique-block-last){
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .technique-mov{
         width: 80vw;
@@ -741,18 +741,20 @@ footer p{
         float: none;
         margin: 0 auto;
         padding: 0;
+        border-radius: 15px;
     }
-    .history-slide{
-        box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
-    }
-    .history-wrapper{
-        width: 100%;
+    .history .swiper-slide{
+        /*box-shadow: 15px 15px rgba(0, 0, 0, 0.25);*/
+        border-radius: 15px;
     }
     .history .swiper-container {
         margin: 0 auto;
         width: 90%;
         border-radius: 15px;
         box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
+    }
+    .history .swiper-wrapper{
+        border-radius: 15px;
     }
 
     .history .swiper-parentDiv {
@@ -911,9 +913,6 @@ footer p{
     }
     .play-block a{
         text-decoration: none;
-    }
-    #map-exp{
-        top: -10px;
     }
     .play-image{
         float:none;
