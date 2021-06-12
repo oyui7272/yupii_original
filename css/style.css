@@ -646,7 +646,7 @@ footer p{
         /*text-decoration: underline rgba(199, 174, 104, 0.5) solid 8px;*/
     }
     .feature-image{
-        height: 210px;
+        height: 200px;
         width: 100%;
         object-fit: cover;
         border-radius: 0px 0 0 0px;
