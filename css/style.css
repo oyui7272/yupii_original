@@ -185,12 +185,15 @@ p{
     background-size: cover;
 }
 .feature .swiper-container {
-    width: 90%;
+    width: 95%;
     border-radius: 15px;
 }
 .feature .swiper-slide{
-    box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    width: 90%;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
 }
 .feature img{
     border-radius: 15px 0 0 15px;
@@ -199,6 +202,17 @@ p{
     width: 100%;
     margin: 0 auto;
     position: relative;
+}
+.feature-block{
+    background-color: #F8F4E6;
+    width: 95%;
+    height: 510px;
+    margin:0 auto;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .feature .swiper-button-prev {
     left: -4%;
@@ -237,17 +251,6 @@ p{
 .feature .section-title{
     color: #F8F4E6;
 }
-.feature-block{
-    background-color: #F8F4E6;
-    width: 100%;
-    height: 510px;
-    margin:0 auto;
-    position: relative;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .feature-subtitle h3{
     position: relative;
     display: inline-block;
@@ -278,7 +281,7 @@ p{
     object-position: 50% 30%;
 }
 #feature-3{
-    object-position: 20% 90%;
+    object-position: 20% bottom;
 }
 .feature-sentence{
     width: calc(100% - 80px);
@@ -574,7 +577,7 @@ footer p{
     h1{
         /*変更前36px*/
         /*font-size: 24px;*/
-        font-size: max(25px, 7.8vw);
+        font-size: max(24px, 7.8vw);
         font-family: 'BIZ UDMincho';
     }
     h2{
@@ -610,6 +613,9 @@ footer p{
     .gNav-menu li{
         font-size: max(14px,3.2vw);
         font-family: 'BIZ UDMincho';
+    }
+    #hamburger h1{
+        font-size: 24px;
     }
     #hamburger .btn-gNav{
         position: fixed;
@@ -845,7 +851,6 @@ footer p{
         border-radius: 15px;
     }
     .history .swiper-slide{
-        /*box-shadow: 15px 15px rgba(0, 0, 0, 0.25);*/
         border-radius: 15px;
     }
     .history .swiper-container {

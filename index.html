@@ -433,10 +433,12 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js" integrity="sha512-sAHYBRXSgMOV2axInO6rUzuKKM5SkItFLlLHQ8YjRD+FBwowtATOs4njP9oim3/MzyAGrB52SLDjpAOLcOT9TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
         var featureSwiper = new Swiper ('.feature .swiper-container', {
             loop: true,
             effect: 'coverflow',
+            centeredSlides : true,
             pagination: {
                 el: '.feature .swiper-pagination',
                 clickable: true,
@@ -452,7 +454,7 @@
     </script>
     <script>
         //swiper 480以下で起動 
-        $(function() {
+        /*$(function() {
         $(window).on('load resize', function(){
             var w = $(window).width();
             var historySwiper;
@@ -480,7 +482,19 @@
                 } 
             } 
         });
-        }); 
+        }); */
+        var historySwiper = new Swiper('.history .swiper-container', {
+            loop: true,
+            effect: 'coverflow',
+            pagination: {
+                el: '.history .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.history .swiper-button-next',
+                prevEl: '.history .swiper-button-prev',
+            },
+        });;
     </script>
     <script>
         $(function() {
