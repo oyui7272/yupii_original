@@ -11,7 +11,9 @@
 h1, h2, h3, p{
     line-height: 1.5em;
 }
-html { scroll-behavior: smooth;}
+html { 
+    scroll-behavior: smooth;
+}
 .nav-container{
     width: 80vw;
     margin: 0 auto;
@@ -675,11 +677,12 @@ footer p{
     }
     /* first-view */
     .first-view{
-        height: 280px;
-        background-position: right 80%;
+        /*height: 280px*/
+        height: 550px;
+        background-position: 50% bottom;
     }
     .message{
-        top: 120px;
+        top: 110px;
         right: 0px;
         font-size: 12px;
     }
