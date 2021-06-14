@@ -282,7 +282,7 @@ p{
     object-position: 50% 30%;
 }
 #feature-3{
-    object-position: 20% bottom;
+    object-position: 40% bottom;
 }
 .feature-sentence{
     width: calc(100% - 80px);
@@ -826,7 +826,6 @@ footer p{
         height: 88px;
     }
     #technique-bg1{
-        transform: scale(0.5);
         display: none;
     }
     #technique-bg2{
