@@ -818,6 +818,10 @@ footer p{
         margin: 0 auto;
         line-height: 1.5em;
     }
+    #gNav .gNav-menu li a::before,
+    #gNav .gNav-menu li a::after {
+        bottom: 0;
+    }
     /* first-view */
     .first-view{
         /*height: 280px*/
