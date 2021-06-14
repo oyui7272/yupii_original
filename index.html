@@ -84,8 +84,8 @@
                                             <h3><span id="big">02 大</span>迫力の大きい音</h3>
                                         </div>
                                         <div class="feature-explain">
-                                            <p>津軽三味線は三味線の中でも最も大きく派手な音で演奏します。</p>
-                                            <p>よりパワーを引き出すために、他の三味線より太い糸を、長く貼ります。そのため、使用する棹も最も太い太棹。</p>
+                                            <p>津軽三味線は三味線の中でも最も大きく華やかな音で演奏します。</p>
+                                            <p>よりパワーを引き出すために、他の三味線より太く長い糸、太い棹<。/p>
                                             <p>日本で1番大きい三味線です。</p>
                                             <p>ハイスピードの曲を大きな音で弾くことで、さらに大迫力の演奏になります。</p>
                                         </div>
@@ -120,7 +120,9 @@
     </div>
     <div class="technique" id="technique">
         <div class="container">
-            <div>
+            <div class="technique-title-block">
+                <img id="technique-bg1" src="image/technique-bg-1.png" alt="">
+                <img id="technique-bg2" src="image/technique-bg-2.png" alt="">
                 <div class="section-title">
                     <h1>技法</h1>
                     <h3>TECHNIQUE</h3>
@@ -437,7 +439,7 @@
     <script>
         var featureSwiper = new Swiper ('.feature .swiper-container', {
             loop: true,
-            effect: 'coverflow',
+            effect: 'slide',
             centeredSlides : true,
             pagination: {
                 el: '.feature .swiper-pagination',
@@ -447,42 +449,9 @@
                 nextEl: '.feature .swiper-button-next',
                 prevEl: '.feature .swiper-button-prev',
             },
-            coverflow: {
-                slideShadows : true,
-            },
         });
     </script>
     <script>
-        //swiper 480以下で起動 
-        /*$(function() {
-        $(window).on('load resize', function(){
-            var w = $(window).width();
-            var historySwiper;
-            if (w <= 480) {
-                if (historySwiper) {
-                    return;
-                } else {
-                    historySwiper = new Swiper('.history .swiper-container', {
-                    loop: true,
-                    effect: 'coverflow',
-                    pagination: {
-                        el: '.history .swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.history .swiper-button-next',
-                        prevEl: '.history .swiper-button-prev',
-                    },
-                    });;
-                }
-            } else {
-                if (historySwiper) {
-                    historySwiper.destroy();
-                    historySwiper = undefined;
-                } 
-            } 
-        });
-        }); */
         var historySwiper = new Swiper('.history .swiper-container', {
             loop: true,
             effect: 'coverflow',

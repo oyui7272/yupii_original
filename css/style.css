@@ -27,7 +27,7 @@ html {
     display: none;
 }
 h1{
-    font-size: 48px;
+    font-size: 46px;
     font-family: 'BIZ UDMincho';
 }
 h2{
@@ -185,16 +185,14 @@ p{
     background-size: cover;
 }
 .feature .swiper-container {
-    width: 95%;
+    width:  calc(76vw + 24px);
     border-radius: 15px;
+    height: 520px;
 }
 .feature .swiper-slide{
     border-radius: 15px;
-    margin: 0 auto;
-    box-sizing: content-box;
-    width: 90%;
-    box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
-}
+    margin: 0 auto;}
+
 .feature img{
     border-radius: 15px 0 0 15px;
 }
@@ -205,14 +203,16 @@ p{
 }
 .feature-block{
     background-color: #F8F4E6;
-    width: 95%;
-    height: 510px;
+    width: 76vw;
+    height: 480px;
     margin:0 auto;
     position: relative;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.25);
+    /*filter: drop-shadow(12px 12px rgba(0, 0, 0, 0.25));*/
 }
 .feature .swiper-button-prev {
     left: -4%;
@@ -268,7 +268,7 @@ p{
    border-radius: 2px; 
 }
 .feature-image{
-    height: 510px;
+    height: 100%;
     width: 50%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
@@ -301,12 +301,30 @@ p{
 }
 
 /* technique */
+.technique-title-block{
+    position: relative;
+    height: 122px;
+}
 .technique{
     padding: 65px 0;
     background-color: #F8F4E6;
 }
 .technique .section-title{
     color: #CB4042;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#technique-bg1{
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+#technique-bg2{
+    position: absolute;
+    top: 0;
+    right: 0px;
 }
 .section-explain{
     margin-bottom: 75px;
@@ -722,18 +740,32 @@ footer p{
 
     /*feature*/
     .feature{
-        /*height: 850px;*/
         height: auto;
         padding: 40px 0;
+    }
+    .feature .container{
+        width: 100vw;
     }
     .feature img{
         border-radius: 15px 15px 0 0;
     }
+    .feature .swiper-parentDiv{
+        width: 95vw;
+    }
     .feature .swiper-container {
-        height: auto;   
+        width: calc(85vw + 12px);
+        height: calc(100% + 12px);
     }
     .feature .swiper-pagination-bullet{
         margin: 15px 8px;
+    }
+    .feature .swiper-button-prev {
+        left: -8px;
+        transform: scale(0.5);
+    }  
+    .feature .swiper-button-next {
+        right: -8px;
+        transform: scale(0.5);
     }
     .feature .container{
         padding: 0 0 45px 0;
@@ -742,10 +774,11 @@ footer p{
         color: #F8F4E6;
     }
     .feature-block{
-        /*height: 600px;*/
+        width: 85vw;
         height: auto;
         flex-direction: column;
         align-content: center;
+        box-shadow: 6px 10px rgba(0, 0, 0, 0.25);
     }
     .feature-subtitle{
         width: 100%;
