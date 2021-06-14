@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="loader-wrap">
+        <div class="loader">Loading...</div>
+    </div>
     <div id="top"></div>
     <div class="nav-block">
         <div id="hamburger">
@@ -487,6 +490,23 @@
                 $('.btn-gNav').removeClass('open');   
             });
         });
+    </script>
+
+    <script>
+    $(function(){
+        var loader = $('.loader-wrap');
+
+        //ページの読み込みが完了したらアニメーションを非表示
+        $(window).on('load',function(){
+            loader.fadeOut(2000);
+        });
+        
+        //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+        setTimeout(function(){
+            loader.fadeOut(2000);
+        },20000);
+        
+    });
     </script>
 </body>
 </html>
