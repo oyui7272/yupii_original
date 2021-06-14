@@ -332,45 +332,51 @@
                 <div class="swiper-parentDiv">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="history-block swiper-slide">
-                                <div class="history-image">
-                                    <img id="okinawa" src="image/okinawa-3.png" alt="">
-                                </div>
-                                <div class="hisotry-subtitle">
-                                    <h3>中国から沖縄に伝来</h3>
-                                    <h3 class="history-number">01</h3>
-                                </div>
-                                <div class="history-explain">
-                                    <p>室町時代、<br>中国より三弦(サンシエン)が伝来</p>
-                                    <p>蛇皮で作られ<br>比較的小さめの三味線</p>
-                                    <p>沖縄では三線として親しまれる</p>
-                                </div>
-                            </div>
-                            <div class="history-block swiper-slide">
-                                <div class="history-image">
-                                    <img id="osaka" src="image/osaka-3.png" alt="">
-                                </div>
-                                <div class="hisotry-subtitle">
-                                    <h3>貿易船により大阪堺へ</h3>
-                                    <h3 class="history-number">02</h3>
-                                </div>
-                                <div class="history-explain">
-                                    <p>16世紀末、<br>琉球王国と日本の貿易により堺へ</p>
-                                    <p>琵琶法師たちにより、<br>バチと三味線の<br>形、大きさ、材質などが<br>改良される</p>
+                            <div class="swiper-slide">
+                                <div class="history-block">
+                                    <div class="history-image">
+                                        <img id="okinawa" src="image/okinawa-3.png" alt="">
+                                    </div>
+                                    <div class="hisotry-subtitle">
+                                        <h3>中国から沖縄に伝来</h3>
+                                        <h3 class="history-number">01</h3>
+                                    </div>
+                                    <div class="history-explain">
+                                        <p>室町時代、<br>中国より三弦(サンシエン)が伝来</p>
+                                        <p>蛇皮で作られ<br>比較的小さめの三味線</p>
+                                        <p>沖縄では三線として親しまれる</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="history-block swiper-slide">
-                                <div class="history-image">
-                                    <img id="aomori" src="image/aomori-3.png" alt="">
+                            <div class="swiper-slide">
+                                <div class="history-block">
+                                    <div class="history-image">
+                                        <img id="osaka" src="image/osaka-3.png" alt="">
+                                    </div>
+                                    <div class="hisotry-subtitle">
+                                        <h3>貿易船により大阪堺へ</h3>
+                                        <h3 class="history-number">02</h3>
+                                    </div>
+                                    <div class="history-explain">
+                                        <p>16世紀末、<br>琉球王国と日本の貿易により堺へ</p>
+                                        <p>琵琶法師たちにより、<br>バチと三味線の<br>形、大きさ、材質などが<br>改良される</p>
+                                    </div>
                                 </div>
-                                <div class="hisotry-subtitle">
-                                    <h3>北前船により東北地方へ</h3>
-                                    <h3 class="history-number">03</h3>
-                                </div>
-                                <div class="history-explain">
-                                    <p>北前船により西日本から東北地方へ</p>
-                                    <p>より大きい音が出るように、<br>胴は大きなものへ</p>
-                                    <p>より早く弾けるように<br>バチは小さなものへ</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="history-block">
+                                    <div class="history-image">
+                                        <img id="aomori" src="image/aomori-3.png" alt="">
+                                    </div>
+                                    <div class="hisotry-subtitle">
+                                        <h3>北前船により東北地方へ</h3>
+                                        <h3 class="history-number">03</h3>
+                                    </div>
+                                    <div class="history-explain">
+                                        <p>北前船により西日本から東北地方へ</p>
+                                        <p>より大きい音が出るように、<br>胴は大きなものへ</p>
+                                        <p>より早く弾けるように<br>バチは小さなものへ</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -454,7 +460,8 @@
     <script>
         var historySwiper = new Swiper('.history .swiper-container', {
             loop: true,
-            effect: 'coverflow',
+            effect: 'slide',
+            centeredSlides : true,
             pagination: {
                 el: '.history .swiper-pagination',
                 clickable: true,

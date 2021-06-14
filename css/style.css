@@ -191,7 +191,8 @@ p{
 }
 .feature .swiper-slide{
     border-radius: 15px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 .feature img{
     border-radius: 15px 0 0 15px;
@@ -745,6 +746,7 @@ footer p{
     }
     .feature .container{
         width: 100vw;
+        padding: 0 0 45px 0;
     }
     .feature img{
         border-radius: 15px 15px 0 0;
@@ -754,7 +756,7 @@ footer p{
     }
     .feature .swiper-container {
         width: calc(85vw + 12px);
-        height: calc(100% + 12px);
+        height: calc(100% + 20px);
     }
     .feature .swiper-pagination-bullet{
         margin: 15px 8px;
@@ -766,9 +768,6 @@ footer p{
     .feature .swiper-button-next {
         right: -8px;
         transform: scale(0.5);
-    }
-    .feature .container{
-        padding: 0 0 45px 0;
     }
     .feature .section-title{
         color: #F8F4E6;
@@ -823,6 +822,16 @@ footer p{
         font-size: 24px;
     }
     /* technique */
+    .technique-title-block{
+        height: 88px;
+    }
+    #technique-bg1{
+        transform: scale(0.5);
+        display: none;
+    }
+    #technique-bg2{
+        display: none;
+    }
     .technique-pc-exp{
         display: none;
     }
@@ -876,39 +885,41 @@ footer p{
         display: block;
     }
     .history-block{
-        width: 90%;
-        height: 460px;
-        float: none;
+        width: 70vw;
+        height: 430px;
         margin: 0 auto;
-        padding: 0;
+        padding-top: 15px;
         border-radius: 15px;
+        box-shadow: 6px 10px rgba(0, 0, 0, 0.25);
     }
     .history .swiper-slide{
         border-radius: 15px;
+        margin: 0 auto;
     }
     .history .swiper-container {
-        margin: 0 auto;
-        width: 90%;
-        border-radius: 15px;
-        box-shadow: 15px 15px rgba(0, 0, 0, 0.25);
-    }
-    .history .swiper-wrapper{
+        width: calc(80vw + 12px);
+        height: 475px;
         border-radius: 15px;
     }
 
     .history .swiper-parentDiv {
-        width: 100%;
+        width: 95vw;
         margin: 0 auto;
         position: relative;
     }
+    .history .container{
+        width: 100vw;
+    }
     .history .swiper-button-prev {
         position: absolute;
-        left: -4%;
+        left: -8px;
+        transform: scale(0.5);
     }
     
     .history .swiper-button-next {
         position: absolute;
-        right: -4%;
+        right: -8px;
+        transform: scale(0.5);
     }
     .history .swiper-button-next,
     .history .swiper-button-prev {
