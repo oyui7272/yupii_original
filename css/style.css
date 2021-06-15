@@ -223,8 +223,6 @@ p{
     transform: rotate(90deg);
     /*描画位置*/
 	position: absolute;
-	left:-15px;
-	top: -15px;
     /*テキストの形状*/
 	color: #F8F4E6;
     font-size: 20px;
@@ -234,32 +232,33 @@ p{
 /* 線の描写 */
 .scrolldown1::after{
     content: "";
-      /*描画位置*/
+    /*描画位置*/
     position: absolute;
+    left: 50px;
     top: -3px;
-      /*線の形状*/
-    height: 1px;
-    width: 30px;
-    background: #eee;
-      /*線の動き1.4秒かけて動く。永遠にループ*/
-    animation: pathmove 1.4s ease-in-out infinite;
+    /*線の形状*/
+    height: 30px;
+    width: 1px;
+    background: #F8F4E6;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+    animation: pathmove-pc 1.4s ease-in-out infinite;
     opacity:0;
 }
   
 /*高さ・位置・透過が変化して線が上から下に動く*/
-@keyframes pathmove{
+@keyframes pathmove-pc{
     0%{
-      width:0;
-      left:90px;
+      height:0;
+      top:90px;
       opacity: 0;
     }
     30%{
-      width:30px;
+      height:30px;
       opacity: 1;
     }
     100%{
-      width:0;
-      left:140px;
+      height:0;
+      top:140px;
       opacity: 0;
     }
 }
@@ -994,32 +993,32 @@ footer p{
     .scrolldown1::after{
         position: absolute;
         top: 5px;
-        ;
+        left: 0px;
         /*線の形状*/
         width: 1px;
         height: 30px;
         background: #F8F4E6;
         /*線の動き1.4秒かけて動く。永遠にループ*/
-        animation: pathmove 1.4s ease-in-out infinite;
+        animation: pathmove-sp 1.4s ease-in-out infinite;
         opacity:0;
     }
 
     /*高さ・位置・透過が変化して線が上から下に動く*/
-    @keyframes pathmove{
-    0%{
-        height:0;
-        top:0;
-        opacity: 0;
-    }
-    30%{
-        height:30px;
-        opacity: 1;
-    }
-    100%{
-        height:0;
-        top:50px;
-        opacity: 0;
-    }
+    @keyframes pathmove-sp{
+        0%{
+            height:0;
+            top:0;
+            opacity: 0;
+        }
+        30%{
+            height:30px;
+            opacity: 1;
+        }
+        100%{
+            height:0;
+            top:50px;
+            opacity: 0;
+        }
     }
     /* introduction */
     .introduction{
