@@ -7,6 +7,7 @@
     <title>津軽三味線</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" integrity="sha512-eeBbzvdY28BPYqEsAv4GU/Mv48zr7l0cI6yhWyqhgRoNG3sr+Q2Fr6751bA04Cw8SGUawtVZlugHm5H1GOU/TQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -219,7 +220,11 @@
             </div>
             <div class="artist-block">
                 <div class="artist-mov">
-                    <iframe src="https://www.youtube-nocookie.com/embed/jVRVeuTqY5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="yt">
+                        <div class="yt_video" youtube="https://www.youtube.com/embed/jVRVeuTqY5g?rel=1&showinfo=1&autoplay=0">
+                            <img src="https://img.youtube.com/vi/jVRVeuTqY5g/mqdefault.jpg" alt="サンプル動画" width="100%" height="auto" />
+                        </div>
+                    </div>
                 </div>
                 <div class="artist-exp">
                     <h3>『千本桜』</h3>
@@ -234,7 +239,11 @@
             </div>
             <div class="artist-block">
                 <div class="artist-mov">
-                    <iframe src="https://www.youtube-nocookie.com/embed/6SkpWKChIwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="yt">
+                        <div class="yt_video" youtube="https://www.youtube.com/embed/6SkpWKChIwA?rel=1&showinfo=1&autoplay=0">
+                            <img src="https://img.youtube.com/vi/6SkpWKChIwA/mqdefault.jpg" alt="サンプル動画" width="100%" height="auto" />
+                        </div>
+                    </div>
                 </div>
                 <div class="artist-exp">
                     <h3>『紅蓮華』</h3>
@@ -249,7 +258,11 @@
             </div>
             <div class="artist-block">
                 <div class="artist-mov">
-                    <iframe src="https://www.youtube-nocookie.com/embed/0c22jQJ1BvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="yt">
+                        <div class="yt_video" youtube="https://www.youtube.com/embed/0c22jQJ1BvU?rel=1&showinfo=1&autoplay=0">
+                            <img src="https://img.youtube.com/vi/0c22jQJ1BvU/mqdefault.jpg" alt="サンプル動画" width="100%" height="auto" />
+                        </div>
+                    </div>
                 </div>
                 <div class="artist-exp">
                     <h3>『夜に駆ける』</h3>
@@ -264,7 +277,11 @@
             </div>
             <div class="artist-block">
                 <div class="artist-mov">
-                    <iframe src="https://www.youtube-nocookie.com/embed/S8D97cp0u04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="yt">
+                        <div class="yt_video" youtube="https://www.youtube.com/embed/S8D97cp0u04?rel=1&showinfo=1&autoplay=0">
+                            <img src="https://img.youtube.com/vi/S8D97cp0u04/mqdefault.jpg" alt="サンプル動画" width="100%" height="auto" />
+                        </div>
+                    </div>
                 </div>
                 <div class="artist-exp">
                     <h3>『Wake Me Up』</h3>
@@ -506,6 +523,12 @@
             loader.fadeOut(2000);
         },10000);
         
+    });
+    </script>
+    <script>
+    $('.yt_video').click(function(){
+        video = '<iframe src="'+ $(this).attr('youtube') +'" frameborder="0"></iframe>';
+        $(this).replaceWith(video);
     });
     </script>
 </body>
