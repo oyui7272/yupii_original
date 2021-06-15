@@ -772,6 +772,12 @@ footer p{
 
 /* SP版 */
 @media screen and (max-width: 480px) {
+    .fade-in{
+        transition-duration: 800ms;
+    }
+    .fade-in-down{
+        transform: translate(0, 30px);
+    }
     .br_hid_pc{
         display: block;
     }
