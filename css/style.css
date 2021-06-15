@@ -979,11 +979,27 @@ footer p{
     /*スクロールダウン全体の場所*/
     .scrolldown1{
         /*描画位置※位置は適宜調整してください*/
-        top: 300px;
+        top: 380px;
     }
     .scrolldown1 span{
         font-size: 17px;
     }
+    @keyframes pathmove{
+        0%{
+          width:0;
+          left:80px;
+          opacity: 0;
+        }
+        30%{
+          width:30px;
+          opacity: 1;
+        }
+        100%{
+          width:0;
+          left:130px;
+          opacity: 0;
+        }
+    }    
 
     /* introduction */
     .introduction{
