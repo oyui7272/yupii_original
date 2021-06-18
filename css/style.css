@@ -1370,6 +1370,7 @@ footer p{
     }
     .play-block a{
         text-decoration: none;
+        font-size: min(max(14px, 3.2vw), 16px);
     }
     .play-image{
         float:none;

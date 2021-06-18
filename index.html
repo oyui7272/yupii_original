@@ -554,6 +554,35 @@
             });
         });
     </script>
+    <script>
+        $(function(){ 
+            //高さの最大値を代入するための変数h
+            var h = 0; 
+            var h_2=0;
+
+            //それぞれの要素の高さを調べる
+            　 $(".feature-block").each(function(){
+                // 要素の高さをと変数hの値を比較し、大きい方を変数hに代入します
+                if($(this).height() > h) {
+                    h = $(this).height();
+                }
+            });
+            
+            // 要素の高さを変数hの値に統一します
+            $(".feature-block").css("height", h + "px");
+
+            //それぞれの要素の高さを調べる
+        　 $(".history-block").each(function(){
+                // 要素の高さをと変数hの値を比較し、大きい方を変数hに代入します
+                if($(this).height() > h) {
+                    h = $(this).height();
+                }
+            });
+            
+            // 要素の高さを変数hの値に統一します
+            $(".history-block").css("height", h + "px");
+        });
+    </script>
 </body>
 </html>
 
