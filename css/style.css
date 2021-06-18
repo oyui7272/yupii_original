@@ -1404,6 +1404,9 @@ footer p{
     .play a{
         border-bottom: solid #C7AE68 2px;
     }
+    .play a::after{
+        display: none;
+    }
     .message{
         top: 110px;
         right: 0px;
