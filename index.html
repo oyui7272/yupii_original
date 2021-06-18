@@ -556,6 +556,21 @@
     </script>
     <script>
         $(function(){ 
+            var timer = 0;
+            var currentWidth = window.innerWidth;
+            $(window).resize(function(){
+                if (currentWidth == window.innerWidth) {
+                    return;
+                }
+                if (timer > 0) {
+                    clearTimeout(timer);
+                }
+        
+                timer = setTimeout(function () {
+                    location.reload();
+                }, 200);
+                
+            });
             //高さの最大値を代入するための変数h
             var h = 0; 
             var h_2=0;
