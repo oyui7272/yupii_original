@@ -720,6 +720,9 @@ video{
 .play p, .play a{
     color: #6A2218;
 }
+.play a{
+    border-bottom: solid #C7AE68 2px;
+}
 .play-icon{
     background-color: #C7AE68;
     width: 40px;
