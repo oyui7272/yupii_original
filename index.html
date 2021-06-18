@@ -554,50 +554,6 @@
             });
         });
     </script>
-    <script>
-        $(function(){ 
-            var timer = 0;
-            var currentWidth = window.innerWidth;
-            $(window).resize(function(){
-                if (currentWidth == window.innerWidth) {
-                    return;
-                }
-                if (timer > 0) {
-                    clearTimeout(timer);
-                }
-        
-                timer = setTimeout(function () {
-                    location.reload();
-                }, 200);
-                
-            });
-            //高さの最大値を代入するための変数h
-            var h = 0; 
-            var h_2=0;
-
-            //それぞれの要素の高さを調べる
-            　 $(".feature-block").each(function(){
-                // 要素の高さをと変数hの値を比較し、大きい方を変数hに代入します
-                if($(this).height() > h) {
-                    h = $(this).height();
-                }
-            });
-            
-            // 要素の高さを変数hの値に統一します
-            $(".feature-block").css("height", h + "px");
-
-            //それぞれの要素の高さを調べる
-        　 $(".history-block").each(function(){
-                // 要素の高さをと変数hの値を比較し、大きい方を変数hに代入します
-                if($(this).height() > h_2) {
-                    h_2 = $(this).height();
-                }
-            });
-            
-            // 要素の高さを変数hの値に統一します
-            $(".history-block").css("height", h_2 + "px");
-        });
-    </script>
 </body>
 </html>
 
