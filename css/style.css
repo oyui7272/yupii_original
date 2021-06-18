@@ -1386,6 +1386,15 @@ footer p{
         padding: 40px 0;
     }
 }
-@media screen and (max-width: 1000px) {
-    
+
+@media (min-width: 500px) and (max-width:900px) {
+    .technique-title-block{
+        height: 122px;
+    }
+    #technique-bg1{
+        display: none;
+    }
+    #technique-bg2{
+        display: none;
+    }        
 }

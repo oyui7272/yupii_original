@@ -574,13 +574,13 @@
             //それぞれの要素の高さを調べる
         　 $(".history-block").each(function(){
                 // 要素の高さをと変数hの値を比較し、大きい方を変数hに代入します
-                if($(this).height() > h) {
-                    h = $(this).height();
+                if($(this).height() > h_2) {
+                    h_2 = $(this).height();
                 }
             });
             
             // 要素の高さを変数hの値に統一します
-            $(".history-block").css("height", h + "px");
+            $(".history-block").css("height", h_2 + "px");
         });
     </script>
 </body>
