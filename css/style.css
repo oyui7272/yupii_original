@@ -720,9 +720,6 @@ video{
 .play p, .play a{
     color: #6A2218;
 }
-.play a{
-    border-bottom: solid #C7AE68 2px;
-}
 .play-icon{
     background-color: #C7AE68;
     width: 40px;
@@ -1403,6 +1400,10 @@ footer p{
 }
 
 @media screen and (max-width:1020px) {
+
+    .play a{
+        border-bottom: solid #C7AE68 2px;
+    }
     .message{
         top: 110px;
         right: 0px;
