@@ -969,7 +969,7 @@ footer p{
     .message{
         top: 110px;
         right: 0px;
-        font-size: max(17px, 4vw);
+        font-size: min(max(17px, 4vw), 22px);
     }
     #message{
         color: #CB4042;
@@ -1361,9 +1361,8 @@ footer p{
         display: block;
     }
     .play-block{
-        width: 100%;
+        padding-left:15px;
         margin: 0px;
-        padding: 0 15px;
     }
     .play-block p, .play-block a{
         display: inline-block;
