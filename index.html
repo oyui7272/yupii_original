@@ -26,7 +26,17 @@
                 <span id="nav-span3"></span>
             </p>
             <h1>津軽三味線</h1>
-            <nav id="gNav" class="">
+            <nav id="gNav-top-fix">
+                <ul class="gNav-menu">
+                    <li><a href="#top">トップ</a></li>
+                    <li><a href="#feature">特徴</a></li>
+                    <li><a href="#technique">技法</a></li>
+                    <li><a href="#artist">アーティスト</a></li>
+                    <li><a href="#history">歴史</a></li>
+                    <li><a href="#play">体験</a></li>
+                </ul>
+            </nav>
+            <nav id="gNav">
                 <ul class="gNav-menu">
                     <li><a href="#top">トップ</a></li>
                     <li><a href="#feature">特徴</a></li>
@@ -505,14 +515,16 @@
             $('.btn-gNav').on("click", function(){
                 $(this).toggleClass('open');
                 $('#gNav').toggleClass('open');
+                $('#gNav-top-fix .gNav-menu').toggleClass('open');
             });
         });
 
-            // メニューをクリックされたら、非表示にする
+        // メニューをクリックされたら、非表示にする
             $(function() {
             $('.gNav-menu li a').on("click", function(){
                 $('#gNav').removeClass('open');
-                $('.btn-gNav').removeClass('open');   
+                $('.btn-gNav').removeClass('open');
+                $('#gNav-top-fix .gNav-menu').removeClass('open');
             });
         });
     </script>
